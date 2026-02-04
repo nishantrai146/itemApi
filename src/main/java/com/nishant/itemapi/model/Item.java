@@ -1,26 +1,21 @@
 package com.nishant.itemapi.model;
 
-public class item {
+public class Item {
     private int id;
     private String name;
     private String description;
     private double price;
     private String category;
-    private double rating;
-    private boolean inStock;
 
-    public item(){
+    public Item(){
 
     }
 
-    public item(int id,String name,String description,double price,String category,double rating,boolean inStock){
-        this.id=id;
+    public Item(String name, String description, double price, String category){
         this.name=name;
         this.description=description;
         this.price=price;
         this.category=category;
-        this.rating=rating;
-        this.inStock=inStock;
     }
 
     public int getId() {
@@ -61,21 +56,5 @@ public class item {
 
     public void setCategory(String category) {
         this.category = category;
-    }
-
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public boolean isInStock() {
-        return inStock;
-    }
-
-    public void setInStock(boolean inStock) {
-        this.inStock = inStock;
     }
 }
