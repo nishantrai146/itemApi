@@ -8,14 +8,16 @@ import java.util.List;
 
 @Service
 public class ItemService {
-    private List<Item> items= new ArrayList<>();
+    private final List<Item> items= new ArrayList<>();
+    private int currentId=1;
 
-    private Item addItem(Item item){
+    public Item addItem(Item item){
+        item.setId(currentId++);
         items.add(item);
         return item;
     }
 
-    private Item getById(int id){
+    public Item getById(int id){
         for(Item item: items){
             if(item.getId() == id){
                 return item;
