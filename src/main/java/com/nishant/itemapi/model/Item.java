@@ -1,6 +1,6 @@
 package com.nishant.itemapi.model;
 
-public class item {
+public class Item {
     private int id;
     private String name;
     private String description;
@@ -9,11 +9,11 @@ public class item {
     private double rating;
     private boolean inStock;
 
-    public item(){
+    public Item(){
 
     }
 
-    public item(int id,String name,String description,double price,String category,double rating,boolean inStock){
+    public Item(int id, String name, String description, double price, String category, double rating, boolean inStock){
         this.id=id;
         this.name=name;
         this.description=description;
